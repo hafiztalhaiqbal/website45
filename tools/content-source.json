@@ -1,0 +1,89 @@
+[
+  {
+    "title": "HVAC Systems & Ventilation",
+    "description": "We design, install, and upgrade heating, ventilation, and air conditioning systems to provide comfortable, safe, and energy-efficient indoor environments.",
+    "items": [
+      "HVAC system design and load calculations",
+      "Chiller plants, AHUs, FCUs, and VRF/VRV systems",
+      "Industrial ventilation and exhaust systems",
+      "Fresh-air systems and evaporative cooling",
+      "HVAC ducting, piping, and insulation",
+      "Testing, commissioning, and preventive maintenance"
+    ]
+  },
+  {
+    "title": "Mechanical Utilities & Industrial Piping",
+    "description": "We provide mechanical infrastructure solutions that support reliable industrial operations, efficient utility distribution, and continuous production.",
+    "items": [
+      "Compressed-air systems and distribution networks",
+      "Steam generation and distribution systems",
+      "Natural gas and SNG distribution networks",
+      "Chilled-water and cooling-water systems",
+      "Thermal oil and hot-water systems",
+      "Pumps, piping, valves, and equipment installation",
+      "Mechanical equipment erection and commissioning"
+    ]
+  },
+  {
+    "title": "Plumbing & Water Management",
+    "description": "We develop dependable plumbing and water distribution systems designed to meet facility requirements while supporting efficient water use and reliable operation.",
+    "items": [
+      "Domestic and industrial plumbing",
+      "Raw-water, drinking-water, and RO-water networks",
+      "Water storage tanks and pumping systems",
+      "Drainage and wastewater piping",
+      "Hot- and cold-water distribution",
+      "Pump selection, installation, and commissioning"
+    ]
+  },
+  {
+    "title": "Firefighting & Fire Protection Systems",
+    "description": "We deliver fire protection infrastructure designed around project requirements, applicable codes, and life-safety objectives.",
+    "items": [
+      "Fire hydrant and hose-reel networks",
+      "Firewater piping and pumping systems",
+      "Fire pumps, valves, and associated equipment",
+      "Fire protection system installation and testing",
+      "Inspection, maintenance, and system upgrades",
+      "Coordination with fire alarm and detection specialists"
+    ]
+  },
+  {
+    "title": "Electrical Systems & Infrastructure",
+    "description": "We provide electrical infrastructure solutions to support safe, reliable, and efficient power distribution across industrial and commercial facilities.",
+    "items": [
+      "Power distribution and electrical installations",
+      "Cable routing, trays, and electrical containment",
+      "Lighting and emergency lighting systems",
+      "Earthing and lightning protection",
+      "Electrical equipment installation",
+      "Testing, commissioning, and troubleshooting"
+    ]
+  },
+  {
+    "title": "Energy Audits & Efficiency Optimization",
+    "description": "We help businesses identify energy losses, reduce utility costs, and improve the performance of existing systems through engineering assessments and practical improvement plans.",
+    "items": [
+      "Energy audits and utility consumption analysis",
+      "HVAC and chiller performance assessments",
+      "Compressed-air leak detection and optimization",
+      "Boiler, steam, and thermal system assessments",
+      "Energy-saving project identification",
+      "Technical feasibility and return-on-investment analysis",
+      "Measurement and verification of implemented savings"
+    ]
+  },
+  {
+    "title": "Engineering Design & Project Execution",
+    "description": "From concept to commissioning, we manage engineering projects with a focus on technical accuracy, cost control, quality, and timely delivery.",
+    "items": [
+      "Engineering design and technical calculations",
+      "Equipment selection and sizing",
+      "Technical drawings and system layouts",
+      "BOQs, cost estimates, and material specifications",
+      "Installation and project execution",
+      "Testing, commissioning, and handover",
+      "Existing system upgrades and retrofits"
+    ]
+  }
+]
