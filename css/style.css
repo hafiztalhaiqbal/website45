@@ -337,7 +337,7 @@ p{
   font-size:14px
 }
 .check-list li:before{
-  content:'Ã¢Å“â€œ';
+  content:'\2713';
   color:var(--blue);
   margin-right:16px
 }
