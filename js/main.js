@@ -28,6 +28,29 @@ document.querySelectorAll('[data-year]').forEach(element => {
 
 // Animate once on entry; content is never hidden while waiting for JavaScript.
 const motionPreference = window.matchMedia('(prefers-reduced-motion: reduce)');
+const headline = document.querySelector('.hero-rotator');
+const headlineControl = document.querySelector('.hero-motion-control');
+if (headline && headlineControl) {
+  headlineControl.hidden = motionPreference.matches;
+  headlineControl.addEventListener('click', () => {
+    const paused = !headline.classList.contains('is-paused');
+    const phrases = [...headline.querySelectorAll('.hero-phrase')];
+    if (paused) {
+      const current = phrases.reduce((best, phrase) =>
+        Number(getComputedStyle(phrase).opacity) > Number(getComputedStyle(best).opacity) ? phrase : best
+      );
+      current.classList.add('paused-current');
+    } else {
+      phrases.forEach(phrase => phrase.classList.remove('paused-current'));
+    }
+    headline.classList.toggle('is-paused', paused);
+    headlineControl.setAttribute('aria-pressed', String(paused));
+    headlineControl.textContent = paused ? 'Resume headline animation' : 'Pause headline animation';
+  });
+  motionPreference.addEventListener('change', event => {
+    headlineControl.hidden = event.matches;
+  });
+}
 if ('IntersectionObserver' in window && !motionPreference.matches) {
   const observer = new IntersectionObserver(entries => {
     entries.forEach(entry => {

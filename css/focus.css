@@ -125,3 +125,45 @@ footer { background: #000; }
   .nav-contact { font-size: 9px; }
   .js .menu-toggle { padding-inline: 7px; font-size: 11px; }
 }
+
+/* Four readable headlines share one grid cell to prevent layout shifts. */
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip-path: inset(50%);
+  white-space: nowrap;
+  border: 0;
+}
+.hero-rotator { display: grid; }
+.hero-phrase { grid-area: 1 / 1; opacity: 0; visibility: hidden; }
+.hero-phrase:nth-of-type(2) { opacity: 1; visibility: visible; }
+.hero-motion-control {
+  background: transparent;
+  color: #52616a;
+  border: 0;
+  border-bottom: 1px solid #a6b8bf;
+  padding: 4px 0;
+  margin-top: 16px;
+  font-size: 10px;
+  cursor: pointer;
+}
+.hero-motion-control:hover { color: var(--blue); }
+@keyframes rotate-headline {
+  0%, 19% { opacity: 1; visibility: visible; transform: translateY(0); }
+  24%, 100% { opacity: 0; visibility: hidden; transform: translateY(-12px); }
+}
+@media(prefers-reduced-motion: no-preference) {
+  .js .hero-phrase { opacity: 0; visibility: hidden; animation: rotate-headline 20s infinite; }
+  .js .hero-phrase:nth-of-type(3) { animation-delay: 5s; }
+  .js .hero-phrase:nth-of-type(4) { animation-delay: 10s; }
+  .js .hero-phrase:nth-of-type(5) { animation-delay: 15s; }
+  .js .hero-rotator.is-paused .hero-phrase { animation: none; opacity: 0; visibility: hidden; }
+  .js .hero-rotator.is-paused .hero-phrase.paused-current { opacity: 1; visibility: visible; transform: none; }
+}
+@media(prefers-reduced-motion: reduce) {
+  .hero-motion-control { display: none; }
+}

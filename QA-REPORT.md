@@ -37,3 +37,7 @@ The website is ready for local review. Public launch remains subject to the READ
 ## 28 October brand and priority update
 
 All six pages checked at 1440, 1024, 768, 390 and 320 pixels: no horizontal overflow; three stylesheets loaded at every size. New logo is used throughout. No Energy Audits service heading remains. Mobile process and footer reviewed visually; firefighting CTA reaches the highlighted service, and mobile menu navigation works. No captured console errors. Static validation passed with 274 references. Supplied logo and discipline graphics optimized locally; no new stock or generated project images were introduced.
+
+## Headline and capability refinement
+
+Removed the Engineering Design & Project Execution capability card, detail section, and obsolete service-6 anchors; project lifecycle remains the core introduction. Homepage now has four rotating headlines with a pause/resume control and a static reduced-motion fallback. Homepage and Services checked at 1440, 768, 390 and 320 pixels: no overflow, no Capability 06, and no em/en dashes in rendered copy. Rotation between different headlines and pause control verified in browser. Static validation passed for 272 references.

@@ -36,3 +36,5 @@ No empty email link, fake address, fabricated testimonial, certification badge, 
 ## Approved update 28 October 2026
 
 User requested removal of the Energy Audits service, prominence for the requirement-to-handover lifecycle and firefighting, and supplied replacement logo and discipline artwork. Public service catalogue now has six services. The source service JSON retains the historical supplied record; the generator excludes Energy Audits. The newly supplied graphic includes residential and fire alarm wording; artwork is displayed as supplied and the specialist-coordination scope remains explicitly stated. Header/footer backgrounds match the black background of the new artwork. Only unused black margins were trimmed from the supplied logo; the logo artwork was not redrawn or recoloured.
+
+The owner subsequently requested removal of Capability 06 (Engineering Design & Project Execution) as a standalone service. Five active capability entries remain; the separate requirement-to-handover process is retained as requested.
