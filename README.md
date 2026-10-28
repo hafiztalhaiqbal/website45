@@ -22,7 +22,7 @@ Visit `http://127.0.0.1:8080`. Press Ctrl+C in the terminal to stop the server. 
 
 - `index.html` — homepage and capability overview.
 - `about.html` — introduction, mission, vision and leadership.
-- `services.html` — all seven services and their supported scope.
+- `services.html` — all six services and their supported scope.
 - `industries.html` — four client/industry groups.
 - `projects.html` — engineering gallery; no invented project names or completion claims.
 - `contact.html` — business enquiries, WhatsApp and calling links.
@@ -38,7 +38,7 @@ Visit `http://127.0.0.1:8080`. Press Ctrl+C in the terminal to stop the server. 
 
 Edit the HTML files directly with any text editor. Text is present in the HTML, so the website and its navigation remain usable if JavaScript is unavailable. Header/footer markup is repeated deliberately to keep the site buildless; update all six pages when changing shared contact details or navigation.
 
-Colours, typography and breakpoints are in `css/style.css`. There are no externally loaded typefaces. Use optimized WebP/JPEG photos and meaningful filenames. Keep image alternative text accurate and preserve logo proportions. The full original supplied branding remains in `assets/images/fluvo-brand.webp`; the navigation uses an undistorted crop of its logo.
+Colours, typography and breakpoints are in `css/style.css`. There are no externally loaded typefaces. Use optimized WebP/JPEG photos and meaningful filenames. Keep image alternative text accurate and preserve logo proportions. The full original supplied branding remains in `assets/images/fluvo-logo-current.webp`; the navigation uses an undistorted crop of its logo.
 
 The optional `tools/build_content.py` records the original one-time generation process. It requires standard Python and the included `tools/content-source.json`, and rewrites generated pages using retained local assets. Do not rerun it after manual edits unless you also update its templates. It is not a required build system.
 
@@ -91,3 +91,7 @@ Local SEO data such as address, opening hours and business location structured d
 ## Redesigned edition
 
 Includes a refreshed homepage, discipline strip, engineering gallery preview, project workflow, enquiry FAQs, subtle entry animations, and a keyboard-accessible gallery image dialog. Reduced-motion preferences disable the animations. Original images, confirmed phone number, and documented company facts are retained. No hosting or domain changes were made.
+
+## Current brand and service priorities
+
+`css/focus.css` contains the current logo backgrounds, illustrated project lifecycle, firefighting highlights, and responsive discipline artwork. Header and footer use `fluvo-logo-current.webp`. Supplied discipline artwork is `fluvo-disciplines.webp`; five crops preserve readable mobile presentation. Energy Audits was removed from the active catalogue at the owner’s request. The original source JSON is historical; the generator filters that record.

@@ -32,3 +32,7 @@ The Word document includes editorial directions such as “Build an Industries p
 - Social profile contents could not be retrieved by the web tool. The user-supplied links are retained without importing unverified profile claims.
 
 No empty email link, fake address, fabricated testimonial, certification badge, unsupported project status or pretend form was added. Missing information is documented here rather than displayed as real business data.
+
+## Approved update 28 October 2026
+
+User requested removal of the Energy Audits service, prominence for the requirement-to-handover lifecycle and firefighting, and supplied replacement logo and discipline artwork. Public service catalogue now has six services. The source service JSON retains the historical supplied record; the generator excludes Energy Audits. The newly supplied graphic includes residential and fire alarm wording; artwork is displayed as supplied and the specialist-coordination scope remains explicitly stated. Header/footer backgrounds match the black background of the new artwork. Only unused black margins were trimmed from the supplied logo; the logo artwork was not redrawn or recoloured.

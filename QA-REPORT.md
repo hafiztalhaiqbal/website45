@@ -33,3 +33,7 @@ Basic accessibility provisions include semantic navigation/main/footer, a skip l
 - Images are optimized local WebP files; no Lighthouse/network throttling performance score is claimed.
 
 The website is ready for local review. Public launch remains subject to the README checklist and deployment-specific verification.
+
+## 28 October brand and priority update
+
+All six pages checked at 1440, 1024, 768, 390 and 320 pixels: no horizontal overflow; three stylesheets loaded at every size. New logo is used throughout. No Energy Audits service heading remains. Mobile process and footer reviewed visually; firefighting CTA reaches the highlighted service, and mobile menu navigation works. No captured console errors. Static validation passed with 274 references. Supplied logo and discipline graphics optimized locally; no new stock or generated project images were introduced.
