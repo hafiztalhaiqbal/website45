@@ -80,7 +80,7 @@ The deliverable has not been uploaded or published. No hosting account or domain
 - [ ] Verify Facebook, Instagram and X links while signed out. Replace the Facebook share link with a stable page URL if available.
 - [ ] Verify a stable Google Business/Maps profile URL before adding a location link. The supplied search URL did not provide a verified address.
 - [ ] Select domain and host; configure HTTPS and the preferred domain redirect.
-- [ ] Complete canonical URLs, sharing-image URL, sitemap and robots configuration.
+- [x] Canonical URLs, sharing image, sitemap and robots configured for https://fluvo.com.pk/. See SEARCH-VISIBILITY.md.
 - [ ] On the live domain, test all six pages, image loads, navigation and keyboard focus.
 - [ ] Test WhatsApp on an actual phone and desktop; confirm the intended account and prefilled text. Test telephone handling on a phone.
 - [ ] Review the site in current Chrome, Edge, Firefox and Safari, and on a real iOS/Android device. Browser QA in this delivery used the available in-app Chromium browser.

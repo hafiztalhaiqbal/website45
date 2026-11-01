@@ -41,3 +41,8 @@ All six pages checked at 1440, 1024, 768, 390 and 320 pixels: no horizontal over
 ## Headline and capability refinement
 
 Removed the Engineering Design & Project Execution capability card, detail section, and obsolete service-6 anchors; project lifecycle remains the core introduction. Homepage now has four rotating headlines with a pause/resume control and a static reduced-motion fallback. Homepage and Services checked at 1440, 768, 390 and 320 pixels: no overflow, no Capability 06, and no em/en dashes in rendered copy. Rotation between different headlines and pause control verified in browser. Static validation passed for 272 references.
+
+
+## 2 November capability carousel and SEO
+
+Homepage checked at 1440, 768, 390 and 320 pixel widths: no horizontal overflow. All five selectors displayed the correct supplied graphic and service link. Next wrapped to HVAC; pause changed to Play slides. No captured console errors. Footer HTML matches the previous commit exactly. Static validation passed for 293 references. Cloudflare deployed successfully; five slides and canonical verified on https://fluvo.com.pk/. Search Console submission and Google rankings not verified.
