@@ -1,0 +1,37 @@
+/* Homepage carousel only. Footer discipline artwork is intentionally independent. */
+.capability-carousel {
+  background: #000;
+  border: 1px solid #26333b;
+  border-radius: 7px;
+  color: #fff;
+  padding: 25px 30px 20px;
+  box-shadow: 14px 14px 0 #e4e9e5;
+  min-width: 0;
+}
+.carousel-top { display: flex; align-items: center; justify-content: space-between; gap: 12px; color: #9db5c2; font-size: 9px; letter-spacing: .12em; }
+.carousel-count { color: #83d2ef; white-space: nowrap; }
+.capability-slides { display: grid; }
+.capability-slide { grid-area: 1 / 1; }
+.capability-slide[hidden] { display: none; }
+.slide-art { display: flex; height: 238px; justify-content: center; align-items: center; margin-top: 15px; }
+.slide-art img { width: auto; height: 100%; max-width: 100%; object-fit: contain; }
+.slide-copy { min-height: 166px; border-top: 1px solid #26333b; padding-top: 20px; }
+.slide-copy h2 { font-size: 23px; line-height: 1.2; letter-spacing: -.025em; }
+.slide-copy p { color: #b6c5ce; font-size: 13px; line-height: 1.7; margin-top: 12px; }
+.slide-copy>a { display: inline-flex; align-items: center; gap: 24px; color: #75c9eb; font-size: 12px; font-weight: 600; margin-top: 15px; }
+.slide-copy>a:hover { color: #fff; }
+.carousel-controls { display: flex; justify-content: space-between; align-items: center; padding-top: 20px; }
+.carousel-controls[hidden],.carousel-selectors[hidden] { display: none; }
+.carousel-arrows { display: flex; gap: 8px; }
+.carousel-arrows button { width: 37px; height: 35px; border: 1px solid #475c68; background: #0c1820; color: white; border-radius: 3px; cursor: pointer; }
+.carousel-arrows button:hover { border-color: #67c5ec; background: #163243; }
+.carousel-pause { border: 0; background: transparent; color: #bdcdd5; text-decoration: underline; text-underline-offset: 4px; font-size: 10px; padding: 9px 3px; cursor: pointer; }
+.carousel-selectors { display: flex; flex-wrap: wrap; gap: 5px; margin-top: 18px; padding-top: 15px; border-top: 1px solid #26333b; }
+.carousel-selectors button { flex: 1; min-height: 32px; white-space: nowrap; background: transparent; border: 1px solid transparent; border-radius: 3px; color: #abbec9; font-size: 10px; padding: 6px; cursor: pointer; }
+.carousel-selectors button[aria-pressed="true"] { background: #113244; border-color: #2c708f; color: #8fddfc; }
+.carousel-selectors button:hover { color: #fff; }
+@keyframes capability-enter { from { opacity: .2; transform: translateX(8px); } to { opacity: 1; transform: none; } }
+@media(prefers-reduced-motion:no-preference) { .capability-slide.is-entering { animation: capability-enter .45s ease-out; } }
+@media(max-width:1100px) { .capability-carousel { padding-inline: 23px; }.slide-art { height: 215px; }.slide-copy { min-height: 185px; }.slide-copy h2 { font-size: 21px; } }
+@media(max-width:900px) { .capability-carousel { padding-inline: 20px; box-shadow: 8px 8px 0 #e4e9e5; }.carousel-top { font-size: 8px; letter-spacing: .06em; }.slide-art { height: 195px; }.slide-copy { min-height: 215px; }.slide-copy h2 { font-size: 20px; }.carousel-selectors button { flex-basis: 28%; } }
+@media(max-width:640px) { .capability-carousel { margin-right: 7px; padding: 22px; }.slide-art { height: 215px; }.slide-copy { min-height: 192px; }.slide-copy h2 { font-size: 23px; }.carousel-selectors button { flex-basis: 25%; min-height: 37px; }.carousel-controls { padding-top: 14px; } }

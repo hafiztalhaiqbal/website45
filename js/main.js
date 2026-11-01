@@ -51,6 +51,70 @@ if (headline && headlineControl) {
     headlineControl.hidden = event.matches;
   });
 }
+
+// Five supplied discipline graphics form a self-contained, keyboard-friendly carousel.
+const carousel = document.querySelector('.capability-carousel');
+if (carousel) {
+  const slides = [...carousel.querySelectorAll('.capability-slide')];
+  const selectors = [...carousel.querySelectorAll('[data-slide]')];
+  const pauseButton = carousel.querySelector('.carousel-pause');
+  const slideRegion = carousel.querySelector('.capability-slides');
+  let selected = 0;
+  let paused = false;
+  let hovered = false;
+  let focused = false;
+  let timer;
+  carousel.querySelector('.carousel-controls').hidden = false;
+  carousel.querySelector('.carousel-selectors').hidden = false;
+
+  function showSlide(index, manual = false) {
+    selected = (index + slides.length) % slides.length;
+    slideRegion.setAttribute('aria-live', manual ? 'polite' : 'off');
+    slides.forEach((slide, number) => {
+      slide.hidden = number !== selected;
+      slide.classList.toggle('is-entering', number === selected);
+    });
+    selectors.forEach((button, number) => button.setAttribute('aria-pressed', String(number === selected)));
+    carousel.querySelector('.carousel-count').textContent = `${String(selected + 1).padStart(2, '0')} / 05`;
+  }
+
+  function schedule() {
+    clearTimeout(timer);
+    if (paused || hovered || focused || motionPreference.matches || document.hidden) return;
+    timer = setTimeout(() => { showSlide(selected + 1); schedule(); }, 6000);
+  }
+
+  selectors.forEach(button => button.addEventListener('click', () => {
+    showSlide(Number(button.dataset.slide), true);
+    schedule();
+  }));
+  carousel.querySelectorAll('[data-direction]').forEach(button => button.addEventListener('click', () => {
+    showSlide(selected + Number(button.dataset.direction), true);
+    schedule();
+  }));
+  pauseButton.addEventListener('click', () => {
+    paused = !paused;
+    pauseButton.setAttribute('aria-pressed', String(paused));
+    pauseButton.textContent = paused ? 'Play slides' : 'Pause slides';
+    schedule();
+  });
+  carousel.addEventListener('keydown', event => {
+    if (event.key !== 'ArrowLeft' && event.key !== 'ArrowRight') return;
+    event.preventDefault();
+    showSlide(selected + (event.key === 'ArrowRight' ? 1 : -1), true);
+    schedule();
+  });
+  carousel.addEventListener('mouseenter', () => { hovered = true; schedule(); });
+  carousel.addEventListener('mouseleave', () => { hovered = false; schedule(); });
+  carousel.addEventListener('focusin', () => { focused = true; schedule(); });
+  carousel.addEventListener('focusout', event => {
+    focused = carousel.contains(event.relatedTarget);
+    schedule();
+  });
+  document.addEventListener('visibilitychange', schedule);
+  motionPreference.addEventListener('change', schedule);
+  schedule();
+}
 if ('IntersectionObserver' in window && !motionPreference.matches) {
   const observer = new IntersectionObserver(entries => {
     entries.forEach(entry => {
