@@ -1,6 +1,19 @@
 {
-  "passed": true,
+  "passed": false,
   "pages": 6,
-  "links_and_assets_checked": 293,
-  "errors": []
+  "links_and_assets_checked": 299,
+  "errors": [
+    "about.html: missing /assets/images/favicon.png",
+    "about.html: missing /assets/images/apple-touch-icon.png",
+    "contact.html: missing /assets/images/favicon.png",
+    "contact.html: missing /assets/images/apple-touch-icon.png",
+    "index.html: missing /assets/images/favicon.png",
+    "index.html: missing /assets/images/apple-touch-icon.png",
+    "industries.html: missing /assets/images/favicon.png",
+    "industries.html: missing /assets/images/apple-touch-icon.png",
+    "projects.html: missing /assets/images/favicon.png",
+    "projects.html: missing /assets/images/apple-touch-icon.png",
+    "services.html: missing /assets/images/favicon.png",
+    "services.html: missing /assets/images/apple-touch-icon.png"
+  ]
 }
