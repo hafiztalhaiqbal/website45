@@ -30,7 +30,7 @@ for filename, document in pages.items():
                 continue
             checked += 1
             url = urlsplit(attributes[key])
-            if url.netloc == 'wa.me' and (url.path != '/923346070617' or not parse_qs(url.query).get('text')):
+            if url.netloc == 'wa.me' and (url.path != '/923261992017' or not parse_qs(url.query).get('text')):
                 errors.append(f'{filename}: invalid WhatsApp URL')
             if url.scheme or url.netloc:
                 continue
